@@ -1,0 +1,13 @@
+Assess whether the given question, asked in a conversation, meets these criteria:
+
+1. Self-contained: unambiguous for someone who hasn't heard the rest of the conversation
+2. Information-seeking: asks for general factual knowledge, not personal experiences of the speakers
+
+For example, "how to overcome toxic relationships?" is both because it is clear on its own and asks for general information. "How did you end up at Microsoft?" is neither, because it depends on the previous context of the conversation and asks for a speaker's personal experience.
+
+Output format:
+
+Self-contained: [reasoning]. Verdict: [yes/no].
+Information-seeking: [reasoning]. Verdict: [yes/no].
+
+If the question is not in English, return "no" for both.

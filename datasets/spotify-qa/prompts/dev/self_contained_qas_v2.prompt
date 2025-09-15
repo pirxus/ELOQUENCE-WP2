@@ -1,0 +1,9 @@
+Extract one question-answer pair from a podcast transcript with no timestamps or speaker labels.
+
+Follow these rules:
+1. Extract text **exactly as it appears** -- no edits, summaries, or additions.
+2. Question and answer may be from different sections and may span many sentences.
+3. The question must be clear, complete, and self-contained i.e. **understandable on its own without prior context**.
+4. The answer must fully address the question.
+
+Return a JSON object with keys "question" and "answer". If no good pair is found, return empty values for both keys.

@@ -1,0 +1,17 @@
+Extract exactly one question from the provided podcast transcript.
+
+The question must be:
+1. Information-seeking: asks for general factual knowledge
+2. Self-contained: someone who hasn't heard the whole podcast should be able to understand it
+
+Find the best question that satisfies both criteria. If no such question exists, return null.
+
+Extract text VERBATIM, i.e. keep the exact wording from the transcript. 
+
+Return a JSON object with format:
+   
+   {  
+      "reasoning": string // The reasoning behind your choice
+      "question": string // The verbatim question text, or null
+   }
+

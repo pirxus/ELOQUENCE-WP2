@@ -1,0 +1,9 @@
+Check whether the given question, which took place in a conversation, meets these criteria:
+
+1. Information-seeking: asks for general knowledge, not only specific to the conversation.
+2. Self-contained: easy to understand by someone who was not in the conversation.
+
+Output format:
+
+Information-seeking: [Short reasoning]. Verdict: [yes/no].
+Self-contained: [Short reasoning]. Verdict: [yes/no].

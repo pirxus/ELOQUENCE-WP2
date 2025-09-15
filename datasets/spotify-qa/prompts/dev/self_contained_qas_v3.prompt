@@ -1,0 +1,26 @@
+Extract exactly one question-answer pair from the provided podcast transcript.
+
+Guidelines:
+1. Extract text VERBATIM -- preserve exact wording from the original transcript.
+2. The question and answer can come from non-adjacent sections of the transcript.
+3. SELECT A QUESTION THAT:
+   - Is information-seeking: asks for general factual knowledge, not only specific to the conversation.
+   - Is self-contained: unambiguous and easy to understand by someone not involved in the conversation.
+4. SELECT AN ANSWER THAT:
+   - Fully address the question
+   - Maintains coherence when separated from surrounding context.
+5. If a good pair meeting ALL criteria is found, return a JSON object with format:
+   
+   {  
+      "reasoning": string // Explanation of why the question and answer meet the criteria
+      "question": string // The complete question text, exactly as it appears in the transcript
+      "answer": string // The complete answer text, exactly as it appears in the transcript
+   }
+
+6. If no pair meeting ALL criteria exists, return:
+   
+   {  
+      "reasoning": string // Explanation of why no valid pair was found
+      "question": null,
+      "answer": null
+   }

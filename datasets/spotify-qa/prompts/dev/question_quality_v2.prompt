@@ -1,0 +1,9 @@
+Check whether the given question, asked in a conversation, meets these criteria:
+
+1. Information-seeking: asks for general factual knowledge, not only specific to the conversation.
+2. Self-contained: unambiguous and easy to understand by someone not involved in the conversation.
+
+Output format:
+
+Information-seeking: [reasoning]. Verdict: [yes/no].
+Self-contained: [reasoning]. Verdict: [yes/no].

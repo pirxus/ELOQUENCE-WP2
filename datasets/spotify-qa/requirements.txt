@@ -1,0 +1,12 @@
+
+fasttext==0.9.3
+pandas==2.2.3
+huggingface_hub==0.29.3
+openai==1.68.0
+tiktoken==0.9.0
+pylcs==0.1.1
+fire==0.7.0
+
+# notebooks
+ipykernel==6.29.5
+ipywidgets==8.1.5

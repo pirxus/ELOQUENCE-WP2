@@ -1,0 +1,5 @@
+Extract one verbatim question-answer pair from a podcast transcript with no timestamps or speaker labels.
+Both the question and the answer must be copied **exactly as they appear**. Do not change, summarize, or add any content.
+The question and the answer may come from different parts of the transcript and may span several sentences.
+Choose a question that is clear, complete, and understandable on its own, and an answer that fully addresses the question without needing extra context.
+Output a JSON object with the keys "question" and "answer". If there is no valid pair, return an empty object.

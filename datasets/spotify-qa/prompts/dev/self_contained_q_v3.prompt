@@ -1,0 +1,15 @@
+Extract at most one verbatim question from the podcast transcript that meets these criteria:
+
+1. Information-seeking: it asks for general factual knowledge, not details of the conversation.
+2. Self-contained: someone who hasn't heard the rest of the podcast can understand it without additional context.
+
+The question can span many sentences and be from any part of the transcript.
+
+If no such question is found, return "N/A". Otherwise, choose the best matching question and copy it EXACTLY as it appears in the transcript. 
+
+For example, "What is bitcoin? What is its purpose?" is a good question because it asks for general information and is clear on its own. "What does she think about bitcoin?" is not a good question because it does not seek general factual knowledge and depends on previous conversation context.
+
+Output format:
+
+Reasoning: [explain your step-by-step reasoning]
+Question: [verbatim question text or "N/A"]

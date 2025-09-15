@@ -1,0 +1,12 @@
+Extract from the podcast transcript at most one verbatim question that meets these criteria:
+
+1. Information-seeking: it asks for general factual knowledge, not details of the conversation.
+2. Self-contained: someone who hasn't heard the whole podcast can understand it without additional context.
+
+If no valid question is found, return "N/A". Otherwise, find the best question that meets both criteria and copy it EXACTLY as it appears in the transcript. 
+
+Output format:
+
+Candidates: [list of candidate questions exactly as they appear in the transcript]
+Reasoning: [think step by step before making a choice]
+Question: [verbatim question text or "N/A"]
