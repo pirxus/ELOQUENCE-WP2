@@ -1,0 +1,3 @@
+[submodule "joint-speech-text-retrieval-QA"]
+	path = joint-speech-text-retrieval-QA
+	url = https://github.com/pirxus/ELQ_joint_speech_text_retrieval_QA.git
